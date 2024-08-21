@@ -8,7 +8,7 @@ This library is free, and will stay free but needs your support to sustain its d
 ## Bug reports
 Found a bug? Let's make it disappear forever.
 However, there have been many bug reports over the years, please read through existing issues to see if the bug has been found before.
-If your submit a bug that has been reported before it will be marked as a `wontfix/duplicate`.
+If your submit a bug that has been reported before it will be marked as a `verdict/duplicate`.
 To file a proper bug report one should supply (at least) the following information
 
 - Provide a minimal reproducible example (MRE) to let others verify the bug. This include **all** source code **and** command line arguments to reproduce the bug
@@ -53,9 +53,16 @@ Not every feature has to be implemented in the library, it is totally fine that 
 If many users repeatedly write the same boilerplate, that makes the feature more interesting to include in the library itself.
 To further categorize the type of feature to streamline discussions, it might be marked as
 
-- `category/bdd`: (Behaviour Driver Development)[doc/markdown/testcases.md#bdd-style-test-cases)
+- `category/API-usage`: Proposals of additions to the core API of doctest, such as new assertion macros or matchers (i.e. `doctest::Contains`, `doctest::Approx`, ...)
+- `category/API-driver`: Proposals of additions to the C++ API for driving doctest, such as adding new methods or classes
+- `category/BDD`: (Behaviour Driver Development)[doc/markdown/testcases.md#bdd-style-test-cases)
+- `category/build-system`: Proposals of new build system features. There can be furthed tagged with `build-system/*` labels.
+- `category/CLI`: Proposals of additions to the doctest command line interface, such as adding new flags
+- `category/config`: Proposals related to the configuration system
 - `category/floats`: Testing of code dealing with floating point numbers.
+- `category/strings`: Proposals of additions or changes to the stringification feature of types and variables
 - `category/reporting`: [Reporter system](doc/markdown/reporters.md)
+- `category/platforms`: Proposals for supporting additional platforms
 
 If the feature proposal is accepted, please proceed to make a [pull requests](#pull-request).
 

@@ -7,11 +7,13 @@ This library is free, and will stay free but needs your support to sustain its d
 
 ## Bug reports
 Found a bug? Let's make it disappear forever.
+However, there have been many bug reports over the years, please read through existing issues to see if the bug has been found before.
+If your submit a bug that has been reported before it will be marked as a `wontfix/duplicate`.
 To file a proper bug report one should supply (at least) the following information
 
-- Provide a minimal reproducible example (MRE) to let others verify the bug. This include all source code and command line arguments to reproduce the bug
+- Provide a minimal reproducible example (MRE) to let others verify the bug. This include **all** source code **and** command line arguments to reproduce the bug
   (or a step by step guide if you use an IDE, but please use the command line if you can).
-- The output from the executable for runtime errors, or from the compiler in for compile time errors / warnings
+- The output from the executable for runtime errors, or from the compiler if you get compiler errors / warnings
 - Your system information, this includes
   - Operating system
   - Doctest version
@@ -22,23 +24,25 @@ For issues related to static code analysis, please provide exact version of your
 Any issue that does not follow this will be marked as `incomplete/needs-MRE`.
 After you have filed the bug report, someone will have a look at it. This might take some time, so please be patient.
 If the issue is still unclear, someone will ask for clarifications and the issue will be marked as `incomplete/needs-clarification`.
-Once the bug report is proper, it will be marked as `type/bug`.
+Once the bug report is proper, it will be marked as `type/bug` and considered for fixing.
+If you decide to fix it, make a note in the issue and proceed to make a [pull requests](#pull-request).
 
 ## Feature proposals
 Do you have an idea on how to make an improvement to the project?
-Awesome! There are many ways to improve it, such as writing documentation to actual library features.
+Awesome! There are many ways to improve it, such as writing documentation to adding actual library features.
 However, keep the following things in mind
 
-- Checkout on the `dev` branch to ensure the feature has not been implemented already.
-- There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before.
+- Checkout on the `dev` branch to ensure the feature has not been implemented already
+- There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before, and if you find it join that thread.
+  If your proposal has been discussed before it will be marked as a `wontfix/duplicate`.
 - Doctest is a mature library. Any **change** is likely to break it for someone, so this should be considered very carefully, and will most likely be rejected or postponed for a very distant 3.xx version.
-- Any **addition** to the library needs to be clearly motivated. Submitting the proposal with a motivation of "it would be nice to have" is not motivating enough.
-  Please provide a clear example with code showing real usage of the feature (and not just a dummy example), and explain how it is useful in clear text.
+- Any **addition** to the library needs to be clearly motivated. Submitting the proposal with a motivation of "it would be nice to have" is not motivating enough
+  Please provide a clear example with code showing real usage of the feature (and not just a dummy example), and explain how it is useful in clear text
   An issue which is considered unmotivated will be marked as `incomplete/needs-motivation`.
 
 Once the feature proposal is proper, it will be marked as `type/feature-proposal`.
 
-If the feature proposal is accepted, please proceed to make a [pull request](#pull-request).
+If the feature proposal is accepted, please proceed to make a [pull requests](#pull-request).
 
 ## Improving the documentation
 Improving the docs is always appreciated.

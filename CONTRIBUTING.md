@@ -70,6 +70,10 @@ When submitting the PR, please run the text through a spell checker first.
 Doctest strives to be an extremely stable testing library. Adding tests is always welcome and highly appreciated.
 Usually you can proceed to PR directly, where it can be reviewed in detail.
 
+## Improving the CI
+Doctest can not ensure that it works as intended on platform not continuously tested.
+If you work with a platform not included there, please consider improving it by adding your platform to the CI.
+
 ## Pull requests
 
 Consider opening an issue for a discussion before making a pull request to make sure the contribution goes smoothly.

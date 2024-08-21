@@ -27,6 +27,11 @@ If the issue is still unclear, someone will ask for clarifications and the issue
 Once the bug report is proper, it will be marked as `type/bug` and considered for fixing.
 If you decide to fix it, make a note in the issue and proceed to make a [pull requests](#pull-request).
 
+To further categorize the type of feature to streamline triaging, it might be marked as
+
+- `category/sanitization`: Related to issues with ASAN, UBSAN and Valgrind.
+- `category/static-analysis`: Related to issues with static analysis tools such as the Clang Static Analyzer (used by clang-tidy).
+
 ## Feature proposals
 Do you have an idea on how to make an improvement to the project?
 Awesome! There are many ways to improve it, such as writing documentation, adding tests, or proposing new library features.
@@ -42,6 +47,15 @@ However, keep the following things in mind
   An issue which is considered unmotivated will be marked as `incomplete/needs-motivation`.
 
 Once the feature proposal is proper, it will be marked as `type/feature-proposal`.
+As part of the triaging procedure the discussions might lead to workarounds and marked accordingly.
+This is a good thing, both because it drives the discussion it self as well as providing actual good workarounds.
+Not every feature has to be implemented in the library, it is totally fine that the library user create their own functions and macros on top of it.
+If many users repeatedly write the same boilerplate, that makes the feature more interesting to include in the library itself.
+To further categorize the type of feature to streamline discussions, it might be marked as
+
+- `category/bdd`: (Behaviour Driver Development)[doc/markdown/testcases.md#bdd-style-test-cases)
+- `category/floats`: Testing of code dealing with floating point numbers.
+- `category/reporting`: [Reporter system](doc/markdown/reporters.md)
 
 If the feature proposal is accepted, please proceed to make a [pull requests](#pull-request).
 

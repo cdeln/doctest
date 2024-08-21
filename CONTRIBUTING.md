@@ -3,7 +3,49 @@
 This library is free, and will stay free but needs your support to sustain its development. There are lots of [**new features**](https://github.com/doctest/doctest/issues/600) and maintenance to do. If you work for a company using **doctest** or have the means to do so, please consider financial support.
 
 [<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" align="top">](https://www.patreon.com/onqtam)
-[<img src="https://user-images.githubusercontent.com/29021710/150090263-50ce0fa7-7813-4648-8273-fec3bbbd171c.jpg" width=175>](https://www.paypal.me/onqtam/10)
+[<img src="https://user-images.githubusercontent.com/29021710/150090263-50ce0fa7-7813-4648-8273-fec3bbbd171c.jpg" width=175>](https://www.paypal.me/onqtam/  10)
+
+## Bug reports
+Found a bug? Let's make it disappear forever.
+To file a proper bug report one should supply (at least) the following information
+
+- Provide a minimal reproducible example (MRE) to let others verify the bug. This include all source code and command line arguments to reproduce the bug
+  (or a step by step guide if you use an IDE, but please use the command line if you can).
+- The output from the executable for runtime errors, or from the compiler in for compile time errors / warnings
+- Your system information, this includes
+  - Operating system
+  - Doctest version
+  - Compiler + version
+
+For issues related to static code analysis, please provide exact version of your static analysis tool.
+
+Any issue that does not follow this will be marked as `incomplete/needs-MRE`.
+After you have filed the bug report, someone will have a look at it. This might take some time, so please be patient.
+If the issue is still unclear, someone will ask for clarifications and the issue will be marked as `incomplete/needs-clarification`.
+Once the bug report is proper, it will be marked as `type/bug`.
+
+## Feature proposals
+Do you have an idea on how to make an improvement to the project?
+Awesome! There are many ways to improve it, such as writing documentation to actual library features.
+However, keep the following things in mind
+
+- Checkout on the `dev` branch to ensure the feature has not been implemented already.
+- There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before.
+- Doctest is a mature library. Any **change** is likely to break it for someone, so this should be considered very carefully, and will most likely be rejected or postponed for a very distant 3.xx version.
+- Any **addition** to the library needs to be clearly motivated. Submitting the proposal with a motivation of "it would be nice to have" is not motivating enough.
+  Please provide a clear example with code showing real usage of the feature (and not just a dummy example), and explain how it is useful in clear text.
+  An issue which is considered unmotivated will be marked as `incomplete/needs-motivation`.
+
+Once the feature proposal is proper, it will be marked as `type/feature-proposal`.
+
+If the feature proposal is accepted, please proceed to make a [pull request](#pull-request).
+
+## Improving the documentation
+Improving the docs is always appreciated.
+Performing an **addition** to the docs should quickly be accepted (given that it is correct) and can usually be done directly with a PR.
+Performing a **change** might trigger a discussion, so please open an issue first to discuss it.
+Issues related to documentation will be marked as `type/docs`.
+When submitting the PR, please run the text through a spell checker first.
 
 ## Pull requests
 
@@ -15,7 +57,7 @@ If you're going to change something in the library itself - make sure you don't 
 
 This framework has some design goals which must be kept. Make sure you have read the [**features and design goals**](doc/markdown/features.md) page.
 
-If your changes also change the output of the library - you should also update the reference output for the tests or otherwise the CI builds will fail when they compare the latest output to the outdated reference output (which is committed in the repository). To do this run CMake with the ```DOCTEST_TEST_MODE``` variable set to ```COLLECT``` (making the new reference output) and then run ```ctest``` and commit the changed (or newly created) ```.txt``` files in the ```test_output``` folders too. The default ```DOCTEST_TEST_MODE``` is ```COMPARE```. 
+If your changes also change the output of the library - you should also update the reference output for the tests or otherwise the CI builds will fail when they compare the latest output to the outdated reference output (which is committed in the repository). To do this run CMake with the ```DOCTEST_TEST_MODE``` variable set to ```COLLECT``` (making the new reference output) and then run ```ctest``` and commit the changed (or newly created) ```.txt``` files in the ```test_output``` folders too. The default ```DOCTEST_TEST_MODE``` is ```COMPARE```.
 
 Example: ```cmake -DDOCTEST_TEST_MODE=COLLECT path/to/sources && cmake --build . && ctest```
 

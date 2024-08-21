@@ -29,9 +29,10 @@ If you decide to fix it, make a note in the issue and proceed to make a [pull re
 
 ## Feature proposals
 Do you have an idea on how to make an improvement to the project?
-Awesome! There are many ways to improve it, such as writing documentation to adding actual library features.
+Awesome! There are many ways to improve it, such as writing documentation, adding tests, or proposing new library features.
 However, keep the following things in mind
 
+- Please read through the [design goals](doc/markdown/features.md) before proposing a feature. While the feature might seem awesome, it might not be worth the trouble.
 - Checkout on the `dev` branch to ensure the feature has not been implemented already
 - There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before, and if you find it join that thread.
   If your proposal has been discussed before it will be marked as a `wontfix/duplicate`.
@@ -50,6 +51,10 @@ Performing an **addition** to the docs should quickly be accepted (given that it
 Performing a **change** might trigger a discussion, so please open an issue first to discuss it.
 Issues related to documentation will be marked as `type/docs`.
 When submitting the PR, please run the text through a spell checker first.
+
+## Adding tests
+Doctest strives to be an extremely stable testing library. Adding tests is always welcome and highly appreciated.
+Usually you can proceed to PR directly, where it can be reviewed in detail.
 
 ## Pull requests
 

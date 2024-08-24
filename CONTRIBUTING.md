@@ -38,7 +38,7 @@ Improving the docs is always appreciated.
 Performing an **addition** to the docs should quickly be accepted (given that it is correct) and can usually be done directly with a PR.
 Performing a **change** might trigger a discussion, so please open an issue first to discuss it.
 Issues related to documentation will be marked as `type/docs`.
-When submitting the PR, please run the text through a spell checker first.
+When submitting the PR, please run the text through a spell checker first (such as `aspell` on Linux).
 
 ## Adding tests
 Doctest strives to be an extremely stable testing library. Adding tests is always welcome and highly appreciated.
@@ -53,19 +53,19 @@ Do you have an idea on how to make an improvement to the project?
 Awesome! There are many ways to improve it, such as writing documentation, adding tests, or proposing new library features.
 However, keep the following things in mind
 
-- Please read through the [design goals](doc/markdown/features.md) before proposing a feature. While the feature might seem awesome, it might not be worth the trouble. Your idea might be rejected, not because it is bad, but because it is not worth it (think "lines of code + risk of breaking others divided by benefit").
-- Checkout on the `dev` branch to ensure the feature has not been implemented already
-- There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before, and if you find it join that thread.
+- Please read through the [design goals](doc/markdown/features.md) before proposing a feature. While the feature might seem awesome, it might not be worth the trouble. Your idea might be rejected, not because it is bad, but because it is not worth it (think "lines of code + risk of breaking others divided by actual benefit").
+- Checkout the `dev` branch to ensure the feature has not been implemented already and that the new feature works as intended.
+- There have been many feature requests over the years. Please read through existing issues to see if your idea has been discussed before, and if you find it, join that thread.
   If your proposal has been discussed before it will be marked as a `verdict/duplicate`.
 - Doctest is a mature library. Any **change** is likely to break it for someone, so this should be considered very carefully, and will most likely be rejected or postponed for a very distant 3.xx version.
 - Any **addition** to the library needs to be clearly motivated. Submitting the proposal with a motivation of "it would be nice to have" is not motivating enough.
-  Please provide a clear example with code showing real usage of the feature (and not just a dummy example), and explain how it is useful in clear text.
+  Please provide a clear example with code showing real usage of the feature (not just a dummy example), and explain how it is useful in clear text.
   An issue which is considered unmotivated will be marked as `incomplete/needs-motivation`.
 
 Once the feature proposal is proper, it will be marked as `type/feature-proposal`.
 As part of the triaging procedure the discussions might lead to workarounds and marked accordingly.
 This is a good thing, both because it drives the discussion itself as well as providing actual good workarounds.
-Not every feature has to be implemented in the library, it is totally fine that the library user create their own functions and macros on top of it.
+Not every feature has to be implemented in the library, it is totally fine that users create their own functions and macros on top of it.
 If many users repeatedly write the same boilerplate, that makes the feature more interesting to include in the library itself.
 To further categorize the type of feature to streamline discussions, it might be marked as
 
